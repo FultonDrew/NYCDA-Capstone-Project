@@ -1,0 +1,140 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #236BB2;
+}
+
+#hangman {
+	font-size: 3em;
+
+}
+
+#game {
+	font-size: 0.75em;
+}
+
+.wrapper {
+	width: 100%;
+	height: 700px;
+	// border: $border;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.inputContainer {
+	// border: $border;
+	-webkit-box-shadow: 0px 9px 22px -6px rgba(0,0,0,0.91);
+	-moz-box-shadow: 0px 9px 22px -6px rgba(0,0,0,0.91);
+	box-shadow: 0px 9px 22px -6px rgba(0,0,0,0.91);
+	border-radius: 5px;
+	width: 80%;
+	height: 60%;
+	margin: 50px auto;
+	background-color: $background-color;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+#startButton {
+	width: $button-width;
+	height: $button-height;
+	border-radius: $button-borderRadius;
+	margin: $button-margin;
+}
+
+#submitButton {
+	width: $button-width;
+	height: $button-height;
+	border-radius: $button-borderRadius;
+	margin: $button-margin;
+}
+
+#input {
+	width: 150px;
+	height: $button-height;
+	border-radius: $button-borderRadius;
+	margin: $button-margin;
+	font-size: 1.75em;
+	text-align: center;
+
+}
+
+#hintButton {
+	width: 120px;
+	height: $button-height;
+	border-radius: $button-borderRadius;
+	margin: $button-margin;
+
+}
+
+#hintBox {
+	margin: 20px auto;
+	display: inline-block;
+	border-radius: 5px;
+	// border: $border;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+#gameBoard {
+	width: 95%;
+	height: 200px;
+	margin: 5px auto;
+	background-color: #236BB2;
+	/*border: 2px solid;*/
+	grid-column-start: 1;
+	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.brick{
+	border:$border;
+	background-color: white;
+	margin: 150px auto;
+}
+
+.brickContainer {
+	margin: 10px auto;
+	border: $border;
+}
+
+#boxesContainer {
+	/*border: 2px solid;*/
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+#turnsLeft {
+	border: $border;
+	border-radius: 5px;
+	height: 100%;
+	background-color: #D0D0D0;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 5;
+	display: inline;
+}
+
+#usedBox {
+	border: $border;
+	border-radius: 5px;
+	height: 100%;
+	background-color: #D0D0D0;
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 5;
+	display: inline;
+}
